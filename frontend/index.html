@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, intial-scale=1">
     <title>AI Blog Generator</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="flex flex-col min-h-screen bg-grey-100 font-sans antialised">
     <!-- NavBar -->
@@ -14,6 +15,7 @@
         </div>
         <div>
             <a href="#" class="text-white hover:underline">Log Out</a>
+
         </div>
     </nav>
     <br>
@@ -39,6 +41,9 @@
                 <button id="generate-blog-button" class="bg-blue-600 text-white px-4 py-2 rounded-r-md hover:bg-blue-700 transition-colors">Generate</button>
                 </div>
             </div>
+            <!-- section for loading circle -->
+
+            <div id="loading-circle" style="display:none;" class="load"></div>
             <!--Generate Blog display section -->
             <section class="mt-10 flex-grow" >
                 <h2 class="text-xl mb-4 font-semibold">Generated Blog Article</h2>
@@ -49,9 +54,9 @@
 
         </div>
     </div>
-    <footer class="text-center p-4 text-black mt-6">
-        Powered by Code with Tomi
-    </footer>
+       <footer class="text-center p-4 text-black mt-6">
+        Licensed &copy;
+   </footer>
     <script>
 
     </script>
